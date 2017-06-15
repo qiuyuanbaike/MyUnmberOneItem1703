@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_one_turn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/keji"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.myunmbertwoitem1703.OneTurnActivity">
+
+    <LinearLayout
+        android:id="@+id/time_layoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="请选择发圈时间:"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/item_sponner_H"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <Spinner
+            android:id="@+id/item_sponner_M"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/picture_layoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="请选择图片"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+
+            <ImageView
+                android:id="@+id/pic_image_01"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_01"
+                android:layout_alignStart="@+id/pic_image_01"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pic_image_02"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_toEndOf="@id/pic_image_01"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_02"
+                android:layout_alignStart="@+id/pic_image_02"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pic_image_03"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/pic_image_02"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_03"
+                android:layout_alignStart="@+id/pic_image_03"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/pic_image_04"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_04"
+                android:layout_alignStart="@+id/pic_image_04"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pic_image_05"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@+id/pic_image_04"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_05"
+                android:layout_alignStart="@+id/pic_image_05"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pic_image_06"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@+id/pic_image_05"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_06"
+                android:layout_alignStart="@+id/pic_image_06"
+                android:visibility="invisible" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/pic_image_07"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_07"
+                android:layout_alignStart="@+id/pic_image_07"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pic_image_08"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/pic_image_07"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+            <CheckBox
+                android:id="@+id/checkBox08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_08"
+                android:layout_alignStart="@+id/pic_image_08"
+                android:visibility="invisible" />
+
+
+            <ImageView
+                android:id="@+id/pic_image_09"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@+id/pic_image_08"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY" />
+
+
+            <CheckBox
+                android:id="@+id/checkBox09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pic_image_09"
+                android:layout_alignStart="@+id/pic_image_09"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/content_layoutId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/picture_GridViewId"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:text="输入发送内容"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/content_editId"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/wire"
+            android:gravity="top"
+            android:hint="输入需要发送的内容"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:textColorHint="#70000000"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/sure_buttonId"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="0.3"
+            android:background="@drawable/button_wire"
+            android:text="确认提交"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

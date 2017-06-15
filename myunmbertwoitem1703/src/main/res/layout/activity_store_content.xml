@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context="com.myunmbertwoitem1703.StoreContent">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:id="@+id/store_layoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/store_image_01"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/store_image_02"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_01"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/store_image_03"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_02"
+                android:layout_weight="1"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/store_image_04"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/store_image_05"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_04"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+
+            <ImageView
+                android:id="@+id/store_image_06"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_05"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/store_image_07"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/store_image_08"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_07"
+                android:layout_weight="1"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+
+            <ImageView
+                android:id="@+id/store_image_09"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_toEndOf="@id/store_image_08"
+                android:background="@drawable/wire"
+                android:clickable="true"
+                android:scaleType="fitXY"
+                android:src="@android:drawable/ic_input_add" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/store_editId"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/wire"
+        android:gravity="top"
+        android:padding="10dp"
+        android:text="ssssssssssssssssssssssss"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/store_itme_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="时间显示区"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+
+</LinearLayout>
